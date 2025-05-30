@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bde2f810d0b5b15c",
+        "id": "62116a7dbe88a4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "a18142b113fe1606",
+            "id": "92088a3343ee82f3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/may24.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "may24"
+              "title": "New tab"
             }
           }
         ]
@@ -181,10 +177,19 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a18142b113fe1606",
+  "active": "92088a3343ee82f3",
   "lastOpenFiles": [
-    "notes/may14.md",
     "notes/may24.md",
+    "notes/Untitled.md",
+    "notes/test.md",
+    "-/templater/templates/random_banner.md",
+    "-/templater/scripts/random_image.js",
+    "-/templater/scripts/random_emoji.js",
+    "-/templater/templates",
+    "-/templater/scripts",
+    "-/templater",
+    "-",
+    "notes/may14.md",
     "notes/markup.md",
     "notes/eng.md",
     "notes",
@@ -192,8 +197,6 @@
     "plugin-extra/scripts/random_image.js",
     "plugin-extra/scripts/random_emoji.js",
     "plugin-extra/templates",
-    "plugin-extra/scripts",
-    "plugin-extra",
     "Untitled 1.md",
     "Untitled.md",
     "Hisaab/money.md",
@@ -209,24 +212,17 @@
     "TList 2025.md",
     "Hisaab/Hisaab.md",
     "Hisaab/Items lended,borrowed.md",
-    "TList 2025.md~",
     "Test Kanban.md",
     "Hisaab.md",
     "Hisaab/Pasted image 20250304223442.png",
     "Hisaab/Pasted image 20250304223421.png",
-    "Hisaab",
     "Excalidraw/Drawing 2025-02-28 15.54.57.excalidraw.md",
-    "Excalidraw",
-    "To-Do",
     "Pasted image 20250226091332.png",
     "Pasted image 20250225203310.png",
     "Pasted image 20250225203252.png",
     "Pasted image 20250225203239.png",
     "plugin-extra/templates/General.md",
     "Thought/Concoctions.md",
-    "To look into.md",
-    "Internship.md",
-    "plugin-extra/templates/Untitled Kanban.md",
     "Screenshot 2024-09-10 at 6.41.47 AM.png",
     "Screenshot 2024-09-10 at 6.37.47 AM.png",
     "Untitled 1.canvas",
