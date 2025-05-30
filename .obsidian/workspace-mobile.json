@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "f9e9f772652976cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "70439b80f28f71c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ef4edc669b0ab6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hisaab/money.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "money"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6266c2e7e779ea79",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "859aa4007090cbf1",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "e7415d7dfaadbfee",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "00e9fd3e495abc47",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "552b46dc836933f7",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "efe690c9ab8256c2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "63dcbc55931bd563",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Hisaab/money.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "2f9b8a83003fd1c7",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Test.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "ce08421f15f91104",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Test.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "7ef4edc669b0ab6a",
+  "lastOpenFiles": [
+    "Hisaab/items.md",
+    "MUJ/MUJ.md",
+    "Hisaab/money.md",
+    "Thought/Pointers.md",
+    "Hisaab/Hisaab.md",
+    "MUJ",
+    "Thought",
+    "opp.md",
+    "ok.md",
+    "Hisaab/Items lended,borrowed.md",
+    "TList 2025.md",
+    "MUJ.md",
+    "Hisaab.md",
+    "Hisaab",
+    "To-Do/Main.canvas",
+    "To-Do/onenote-bak.png",
+    "Excalidraw/Drawing 2025-02-28 15.54.57.excalidraw.md",
+    "To-Do",
+    "Excalidraw",
+    "Hi.canvas",
+    "Test Kanban.md",
+    "Pasted image 20250226091332.png",
+    "Pasted image 20250226092432.png",
+    "Pasted image 20250225203239.png",
+    "Pasted image 20250225203252.png",
+    "Pasted image 20250225203310.png",
+    "Test.md"
+  ]
+}

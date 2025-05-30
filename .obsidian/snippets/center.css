@@ -1,0 +1,13 @@
+.markdown-source-view img, .markdown-preview-view img, .markdown-preview-view video {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    max-height: 500px;
+    max-width: 600px;
+    opacity: 1 !important;
+    border-radius: 10px;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+

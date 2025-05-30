@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "73a2a952744f1e4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "bde2f810d0b5b15c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a18142b113fe1606",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/may24.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "may24"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3304be0ebfad5596",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c670e1b7190c2ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b07ae92cb3ab3a38",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 249.5
+  },
+  "right": {
+    "id": "810a2393ee90cfc3",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce7ed1bc3437eeca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a79a606d8b846329",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b8192fb406e90b7c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "plugin-extra/templates/Template_R.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Template_R"
+            }
+          },
+          {
+            "id": "7f056600f99dca86",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0ab8cd9b8a83ba22",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "plugin-extra/templates/Template_R.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Template_R"
+            }
+          },
+          {
+            "id": "b812e406a9c3e20e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "plugin-extra/templates/Template_R.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Template_R"
+            }
+          },
+          {
+            "id": "8683d45b85353051",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cab0bf33ed23b3fa",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 321.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-kanban:Create new board": false,
+      "templater-obsidian:Templater": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "a18142b113fe1606",
+  "lastOpenFiles": [
+    "notes/may14.md",
+    "notes/may24.md",
+    "notes/markup.md",
+    "notes/eng.md",
+    "notes",
+    "plugin-extra/templates/random_banner.md",
+    "plugin-extra/scripts/random_image.js",
+    "plugin-extra/scripts/random_emoji.js",
+    "plugin-extra/templates",
+    "plugin-extra/scripts",
+    "plugin-extra",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Hisaab/money.md",
+    "Thought/Pointers.md",
+    "Hisaab/items.md",
+    "plugin-extra/templates/Template_R.md",
+    "opp.md",
+    "ok.md",
+    "To-Do/Main.canvas",
+    "To-Do/onenote-bak.png",
+    "MUJ/MUJ.md",
+    "MUJ.md",
+    "TList 2025.md",
+    "Hisaab/Hisaab.md",
+    "Hisaab/Items lended,borrowed.md",
+    "TList 2025.md~",
+    "Test Kanban.md",
+    "Hisaab.md",
+    "Hisaab/Pasted image 20250304223442.png",
+    "Hisaab/Pasted image 20250304223421.png",
+    "Hisaab",
+    "Excalidraw/Drawing 2025-02-28 15.54.57.excalidraw.md",
+    "Excalidraw",
+    "To-Do",
+    "Pasted image 20250226091332.png",
+    "Pasted image 20250225203310.png",
+    "Pasted image 20250225203252.png",
+    "Pasted image 20250225203239.png",
+    "plugin-extra/templates/General.md",
+    "Thought/Concoctions.md",
+    "To look into.md",
+    "Internship.md",
+    "plugin-extra/templates/Untitled Kanban.md",
+    "Screenshot 2024-09-10 at 6.41.47 AM.png",
+    "Screenshot 2024-09-10 at 6.37.47 AM.png",
+    "Untitled 1.canvas",
+    "sport-think-gif-by-kochstrasse.gif"
+  ]
+}

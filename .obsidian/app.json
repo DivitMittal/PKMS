@@ -1,0 +1,15 @@
+{
+  "vimMode": true,
+  "useTab": false,
+  "showLineNumber": false,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "autoConvertHtml": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./",
+  "propertiesInDocument": "source",
+  "tabSize": 4
+}
