@@ -9,23 +9,50 @@ var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __defNormalProp = (obj, key, value) =>
+  key in obj
+    ? __defProp(obj, key, {
+        enumerable: true,
+        configurable: true,
+        writable: true,
+        value,
+      })
+    : (obj[key] = value);
+var __markAsModule = (target) =>
+  __defProp(target, "__esModule", { value: true });
 var __export = (target, all) => {
   __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 var __reExport = (target, module2, desc) => {
-  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
+  if (
+    (module2 && typeof module2 === "object") ||
+    typeof module2 === "function"
+  ) {
     for (let key of __getOwnPropNames(module2))
       if (!__hasOwnProp.call(target, key) && key !== "default")
-        __defProp(target, key, { get: () => module2[key], enumerable: !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable });
+        __defProp(target, key, {
+          get: () => module2[key],
+          enumerable:
+            !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable,
+        });
   }
   return target;
 };
 var __toModule = (module2) => {
-  return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
+  return __reExport(
+    __markAsModule(
+      __defProp(
+        module2 != null ? __create(__getProtoOf(module2)) : {},
+        "default",
+        module2 && module2.__esModule && "default" in module2
+          ? { get: () => module2.default, enumerable: true }
+          : { value: module2, enumerable: true },
+      ),
+    ),
+    module2,
+  );
 };
 var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
@@ -34,39 +61,39 @@ var __publicField = (obj, key, value) => {
 
 // src/main.ts
 __export(exports, {
-  default: () => SettingsSearch
+  default: () => SettingsSearch,
 });
 var import_obsidian = __toModule(require("obsidian"));
 
 // node_modules/monkey-around/mjs/index.js
 function around(obj, factories) {
-  const removers = Object.keys(factories).map((key) => around1(obj, key, factories[key]));
-  return removers.length === 1 ? removers[0] : function() {
-    removers.forEach((r) => r());
-  };
+  const removers = Object.keys(factories).map((key) =>
+    around1(obj, key, factories[key]),
+  );
+  return removers.length === 1
+    ? removers[0]
+    : function () {
+        removers.forEach((r) => r());
+      };
 }
 function around1(obj, method, createWrapper) {
-  const original = obj[method], hadOwn = obj.hasOwnProperty(method);
+  const original = obj[method],
+    hadOwn = obj.hasOwnProperty(method);
   let current = createWrapper(original);
-  if (original)
-    Object.setPrototypeOf(current, original);
+  if (original) Object.setPrototypeOf(current, original);
   Object.setPrototypeOf(wrapper, current);
   obj[method] = wrapper;
   return remove;
   function wrapper(...args) {
-    if (current === original && obj[method] === wrapper)
-      remove();
+    if (current === original && obj[method] === wrapper) remove();
     return current.apply(this, args);
   }
   function remove() {
     if (obj[method] === wrapper) {
-      if (hadOwn)
-        obj[method] = original;
-      else
-        delete obj[method];
+      if (hadOwn) obj[method] = original;
+      else delete obj[method];
     }
-    if (current === original)
-      return;
+    if (current === original) return;
     current = original;
     Object.setPrototypeOf(wrapper, original || Function);
   }
@@ -76,9 +103,23 @@ function around1(obj, method, createWrapper) {
 var SettingsSearch = class extends import_obsidian.Plugin {
   constructor() {
     super(...arguments);
-    __publicField(this, "settingsSearchEl", createDiv("settings-search-container vertical-tab-header-group"));
-    __publicField(this, "settingsResultsContainerEl", createDiv("settings-search-results-container vertical-tab-content"));
-    __publicField(this, "settingsNavItemContainer", this.settingsSearchEl.createDiv("vertical-tab-header-group-items").createDiv("vertical-tab-nav-item settings-search-input"));
+    __publicField(
+      this,
+      "settingsSearchEl",
+      createDiv("settings-search-container vertical-tab-header-group"),
+    );
+    __publicField(
+      this,
+      "settingsResultsContainerEl",
+      createDiv("settings-search-results-container vertical-tab-content"),
+    );
+    __publicField(
+      this,
+      "settingsNavItemContainer",
+      this.settingsSearchEl
+        .createDiv("vertical-tab-header-group-items")
+        .createDiv("vertical-tab-nav-item settings-search-input"),
+    );
     __publicField(this, "settingsResultsEl");
     __publicField(this, "search");
     __publicField(this, "locale");
@@ -99,13 +140,15 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     (window["SettingsSearch"] = {
       addResources: this.addResources.bind(this),
       removeResources: this.removeResources.bind(this),
-      removeTabResources: this.removeTabResources.bind(this)
+      removeTabResources: this.removeTabResources.bind(this),
     }) && this.register(() => delete window["SettingsSearch"]);
     this.app.workspace.onLayoutReady(async () => {
       this.settingsResultsContainerEl.createEl("h3", {
-        text: "Settings Search Results"
+        text: "Settings Search Results",
       });
-      this.settingsResultsEl = this.settingsResultsContainerEl.createDiv("settings-search-results");
+      this.settingsResultsEl = this.settingsResultsContainerEl.createDiv(
+        "settings-search-results",
+      );
       this.buildScope();
       this.buildSearch();
       this.buildResources();
@@ -141,23 +184,34 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     let name;
     if (resource.external) {
       name = createFragment((el) => {
-        (0, import_obsidian.setIcon)(el.createSpan({
-          attr: {
-            "aria-label": "This setting was added by another plugin."
-          }
-        }), "info");
+        (0, import_obsidian.setIcon)(
+          el.createSpan({
+            attr: {
+              "aria-label": "This setting was added by another plugin.",
+            },
+          }),
+          "info",
+        );
         el.createSpan({ text: resource.text });
       });
     } else {
       name = resource.text;
     }
-    const setting = new import_obsidian.Setting(createDiv()).setName(name).setDesc(createFragment((e) => e.createDiv().innerHTML = resource.desc ?? ""));
+    const setting = new import_obsidian.Setting(createDiv())
+      .setName(name)
+      .setDesc(
+        createFragment((e) => (e.createDiv().innerHTML = resource.desc ?? "")),
+      );
     if (resource.external) {
       setting.settingEl.addClass("set-externally");
     }
     if (resource.tab == "community-plugins") {
       let plugin = this.manifests.find((p) => p.name == resource.text);
-      if (plugin && this.app.plugins.getPlugin(plugin.id)?._loaded && this.app.setting.pluginTabs.find((t) => t.id == plugin.id)) {
+      if (
+        plugin &&
+        this.app.plugins.getPlugin(plugin.id)?._loaded &&
+        this.app.setting.pluginTabs.find((t) => t.id == plugin.id)
+      ) {
         setting.addExtraButton((b) => {
           b.setTooltip(`Open ${resource.text} Settings`).onClick(() => {
             this.app.setting.openTabById(plugin.id);
@@ -167,8 +221,13 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     }
     if (resource.tab == "plugins") {
       const plugins = Object.values(this.app.internalPlugins.plugins);
-      const plugin = plugins.find((p) => p._loaded && p.instance.name == resource.text);
-      if (plugin && this.app.setting.pluginTabs.find((t) => t.id == plugin.instance.id)) {
+      const plugin = plugins.find(
+        (p) => p._loaded && p.instance.name == resource.text,
+      );
+      if (
+        plugin &&
+        this.app.setting.pluginTabs.find((t) => t.id == plugin.instance.id)
+      ) {
         setting.addExtraButton((b) => {
           b.setTooltip(`Open ${resource.text} Settings`).onClick(() => {
             this.app.setting.openTabById(plugin.instance.id);
@@ -197,15 +256,20 @@ var SettingsSearch = class extends import_obsidian.Plugin {
   addResources(...resources) {
     for (const resource of resources) {
       resource.external = true;
-      if (this.resources.find((k) => this.equivalent(resource, k)))
-        continue;
+      if (this.resources.find((k) => this.equivalent(resource, k))) continue;
       this.resources.push(resource);
       this.addResourceToCache(resource);
     }
     return () => this.removeResources(...resources);
   }
   equivalent(resource1, resource2) {
-    return resource1.name == resource2.name && resource1.tab == resource2.tab && resource1.text == resource2.text && resource1.desc == resource2.desc && resource1.external == resource2.external;
+    return (
+      resource1.name == resource2.name &&
+      resource1.tab == resource2.tab &&
+      resource1.text == resource2.text &&
+      resource1.desc == resource2.desc &&
+      resource1.external == resource2.external
+    );
   }
   removeResources(...resources) {
     const removing = [];
@@ -215,8 +279,12 @@ var SettingsSearch = class extends import_obsidian.Plugin {
         continue;
       }
       resource.external = true;
-      this.resources = this.resources.filter((r) => !this.equivalent(resource, r));
-      removing.push(...keys.filter((k) => k == resource || this.equivalent(resource, k)));
+      this.resources = this.resources.filter(
+        (r) => !this.equivalent(resource, r),
+      );
+      removing.push(
+        ...keys.filter((k) => k == resource || this.equivalent(resource, k)),
+      );
     }
     this.removeResourcesFromCache(removing);
   }
@@ -227,88 +295,98 @@ var SettingsSearch = class extends import_obsidian.Plugin {
   }
   async getTabResources(tab) {
     await tab.display();
-    const settings = tab.containerEl.querySelectorAll(".setting-item:not(.setting-item-header)");
+    const settings = tab.containerEl.querySelectorAll(
+      ".setting-item:not(.setting-item-header)",
+    );
     for (const el of Array.from(settings)) {
       const text = el.querySelector(".setting-item-name")?.textContent;
-      if (!text)
-        continue;
-      const desc = el.querySelector(".setting-item-description")?.innerHTML ?? "";
+      if (!text) continue;
+      const desc =
+        el.querySelector(".setting-item-description")?.innerHTML ?? "";
       const resource = {
         tab: tab.id,
         name: tab.name,
         text,
-        desc
+        desc,
       };
       this.resources.push(resource);
       this.addResourceToCache(resource);
     }
-    if (this.app.setting.activeTab?.id == tab.id)
-      return;
+    if (this.app.setting.activeTab?.id == tab.id) return;
     this.seen.push(tab.id);
     tab.containerEl.detach();
     tab.hide();
   }
   patchSettings() {
     const self = this;
-    this.register(around(this.app.setting, {
-      onOpen: function(next) {
-        return function() {
-          next.apply(this);
-          if (!import_obsidian.Platform.isMobile)
-            self.search.inputEl.focus();
-          return next;
-        };
-      }
-    }));
-    this.register(around(this.app.setting, {
-      addSettingTab: function(next) {
-        return function(tab) {
-          if (tab && tab.id !== void 0 && !self.seen.includes(tab.id)) {
-            self.getTabResources(tab);
-          }
-          return next.call(this, tab);
-        };
-      }
-    }));
-    this.register(around(this.app.setting, {
-      removeSettingTab: function(next) {
-        return function(tab) {
-          if (this.isPluginSettingTab(tab)) {
-            self.removeTabResources(tab.id);
-          }
-          return next.call(this, tab);
-        };
-      }
-    }));
-    this.register(around(this.app.setting, {
-      openTab: function(next) {
-        return function(tab) {
-          self.searchAppended = false;
-          self.app.keymap.popScope(self.scope);
-          return next.call(this, tab);
-        };
-      },
-      openTabById: function(next) {
-        return function(tab) {
-          self.searchAppended = false;
-          self.app.keymap.popScope(self.scope);
-          return next.call(this, tab);
-        };
-      },
-      onClose: function(next) {
-        return function() {
-          if (import_obsidian.Platform.isMobile) {
-            self.detach();
-          }
-          return next.call(this);
-        };
-      }
-    }));
+    this.register(
+      around(this.app.setting, {
+        onOpen: function (next) {
+          return function () {
+            next.apply(this);
+            if (!import_obsidian.Platform.isMobile) self.search.inputEl.focus();
+            return next;
+          };
+        },
+      }),
+    );
+    this.register(
+      around(this.app.setting, {
+        addSettingTab: function (next) {
+          return function (tab) {
+            if (tab && tab.id !== void 0 && !self.seen.includes(tab.id)) {
+              self.getTabResources(tab);
+            }
+            return next.call(this, tab);
+          };
+        },
+      }),
+    );
+    this.register(
+      around(this.app.setting, {
+        removeSettingTab: function (next) {
+          return function (tab) {
+            if (this.isPluginSettingTab(tab)) {
+              self.removeTabResources(tab.id);
+            }
+            return next.call(this, tab);
+          };
+        },
+      }),
+    );
+    this.register(
+      around(this.app.setting, {
+        openTab: function (next) {
+          return function (tab) {
+            self.searchAppended = false;
+            self.app.keymap.popScope(self.scope);
+            return next.call(this, tab);
+          };
+        },
+        openTabById: function (next) {
+          return function (tab) {
+            self.searchAppended = false;
+            self.app.keymap.popScope(self.scope);
+            return next.call(this, tab);
+          };
+        },
+        onClose: function (next) {
+          return function () {
+            if (import_obsidian.Platform.isMobile) {
+              self.detach();
+            }
+            return next.call(this);
+          };
+        },
+      }),
+    );
   }
   buildSearch() {
-    const tempSetting = new import_obsidian.Setting(createDiv()).addSearch((s) => {
-      this.search = s;
-    });
+    const tempSetting = new import_obsidian.Setting(createDiv()).addSearch(
+      (s) => {
+        this.search = s;
+      },
+    );
     this.settingsNavItemContainer.append(tempSetting.controlEl);
     tempSetting.settingEl.detach();
     this.search.onChange((v) => {
@@ -322,28 +400,36 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       if (this.activeSetting) {
         this.activeSetting.settingEl.removeClass("active");
       }
-      this.activeIndex = ((this.activeIndex + 1) % this.results.length + this.results.length) % this.results.length;
+      this.activeIndex =
+        (((this.activeIndex + 1) % this.results.length) + this.results.length) %
+        this.results.length;
       this.centerActiveSetting();
     });
     this.scope.register([], "ArrowDown", () => {
       if (this.activeSetting) {
         this.activeSetting.settingEl.removeClass("active");
       }
-      this.activeIndex = ((this.activeIndex + 1) % this.results.length + this.results.length) % this.results.length;
+      this.activeIndex =
+        (((this.activeIndex + 1) % this.results.length) + this.results.length) %
+        this.results.length;
       this.centerActiveSetting();
     });
     this.scope.register(["Ctrl"], "P", () => {
       if (this.activeSetting) {
         this.activeSetting.settingEl.removeClass("active");
       }
-      this.activeIndex = ((this.activeIndex - 1) % this.results.length + this.results.length) % this.results.length;
+      this.activeIndex =
+        (((this.activeIndex - 1) % this.results.length) + this.results.length) %
+        this.results.length;
       this.centerActiveSetting();
     });
     this.scope.register([], "ArrowUp", () => {
       if (this.activeSetting) {
         this.activeSetting.settingEl.removeClass("active");
       }
-      this.activeIndex = ((this.activeIndex - 1) % this.results.length + this.results.length) % this.results.length;
+      this.activeIndex =
+        (((this.activeIndex - 1) % this.results.length) + this.results.length) %
+        this.results.length;
       this.centerActiveSetting();
     });
     this.scope.register([], "Enter", () => {
@@ -358,7 +444,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     this.activeSetting.settingEl.addClass("active");
     this.activeSetting.settingEl.scrollIntoView({
       behavior: "auto",
-      block: "nearest"
+      block: "nearest",
     });
   }
   detachFromMobile() {
@@ -397,9 +483,13 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       if (!import_obsidian.Platform.isMobile) {
         this.app.setting.activeTab.navEl.removeClass("is-active");
         this.app.setting.tabContentContainer.empty();
-        this.app.setting.tabContentContainer.append(this.settingsResultsContainerEl);
+        this.app.setting.tabContentContainer.append(
+          this.settingsResultsContainerEl,
+        );
       } else {
-        const headers = this.app.setting.tabHeadersEl.querySelectorAll(".vertical-tab-header-group:not(.settings-search-container)");
+        const headers = this.app.setting.tabHeadersEl.querySelectorAll(
+          ".vertical-tab-header-group:not(.settings-search-container)",
+        );
         for (const header of Array.from(headers)) {
           this.mobileContainers.push(header);
           header.detach();
@@ -437,7 +527,9 @@ var SettingsSearch = class extends import_obsidian.Plugin {
       for (const resource of results) {
         if (!(resource.tab in headers)) {
           headers[resource.tab] = this.settingsResultsEl.createDiv();
-          new import_obsidian.Setting(headers[resource.tab]).setHeading().setName(resource.name);
+          new import_obsidian.Setting(headers[resource.tab])
+            .setHeading()
+            .setName(resource.name);
         }
         const setting = this.getResourceFromCache(resource);
         headers[resource.tab].append(setting.settingEl);
@@ -448,7 +540,9 @@ var SettingsSearch = class extends import_obsidian.Plugin {
   }
   showResult(result) {
     this.search.setValue("");
-    const tab = this.app.setting.settingTabs.find((t) => t.id == result.tab) ?? this.app.setting.pluginTabs.find((t) => t.id == result.tab);
+    const tab =
+      this.app.setting.settingTabs.find((t) => t.id == result.tab) ??
+      this.app.setting.pluginTabs.find((t) => t.id == result.tab);
     if (!tab) {
       new import_obsidian.Notice("There was an issue opening the setting tab.");
       return;
@@ -459,17 +553,21 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     try {
       const names = tab.containerEl.querySelectorAll(".setting-item-name");
       const el = Array.from(names).find((n) => n.textContent == result.text);
-      if (!el)
-        return;
+      if (!el) return;
       const setting = el.closest(".setting-item");
-      if (!setting)
-        return;
+      if (!setting) return;
       if (tab.id == "obsidian-style-settings") {
         let collapsed = setting.closest(".style-settings-container");
         let previous = collapsed?.previousElementSibling;
-        while (previous != null && previous.hasClass("is-collapsed") && previous.hasClass("style-settings-heading")) {
+        while (
+          previous != null &&
+          previous.hasClass("is-collapsed") &&
+          previous.hasClass("style-settings-heading")
+        ) {
           previous.removeClass("is-collapsed");
-          collapsed = collapsed.parentElement?.closest(".style-settings-container");
+          collapsed = collapsed.parentElement?.closest(
+            ".style-settings-container",
+          );
           previous = collapsed?.previousElementSibling;
         }
       }
@@ -486,9 +584,12 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     }
   }
   performFuzzySearch(input) {
-    const results = [], hotkeys = [];
+    const results = [],
+      hotkeys = [];
     for (const resource of this.resources) {
-      let result = (0, import_obsidian.prepareSimpleSearch)(input)(resource.text) ?? (0, import_obsidian.prepareSimpleSearch)(input)(resource.desc);
+      let result =
+        (0, import_obsidian.prepareSimpleSearch)(input)(resource.text) ??
+        (0, import_obsidian.prepareSimpleSearch)(input)(resource.desc);
       if (result) {
         if (resource.tab == "hotkeys") {
           hotkeys.push(resource);

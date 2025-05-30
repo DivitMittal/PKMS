@@ -8,9 +8,7 @@
   "translucency": true,
   "nativeMenus": true,
   "showViewHeader": false,
-  "enabledCssSnippets": [
-    "hide"
-  ],
+  "enabledCssSnippets": ["hide"],
   "monospaceFontFamily": "CaskaydiaCove NFM",
   "baseFontSizeAction": false,
   "showRibbon": false

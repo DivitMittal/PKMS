@@ -1,65 +1,49 @@
 {
   "google-calendar:open-google-calendar-web-view": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "C"
     }
   ],
   "app:toggle-left-sidebar": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "ArrowLeft"
     }
   ],
   "app:toggle-right-sidebar": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "ArrowRight"
     }
   ],
   "obsidian-hider:toggle-app-ribbon": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "A"
     }
   ],
   "editor:fold-more": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "ArrowUp"
     }
   ],
   "editor:fold-less": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "ArrowDown"
     }
   ],
   "google-calendar:create-google-calendar-event": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "E"
     }
   ],
   "file-explorer:open": [
     {
-      "modifiers": [
-        "Alt"
-      ],
+      "modifiers": ["Alt"],
       "key": "F"
     }
   ],

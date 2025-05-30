@@ -770,21 +770,15 @@
   "rank": "Bronze",
   "modifierKeyOverrides": [
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "Enter"
     },
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "k"
     },
     {
-      "modifiers": [
-        "Mod"
-      ],
+      "modifiers": ["Mod"],
       "key": "G"
     }
   ],
