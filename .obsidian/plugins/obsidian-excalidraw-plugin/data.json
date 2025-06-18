@@ -15,14 +15,16 @@
   "onceOffCompressFlagReset": true,
   "onceOffGPTVersionReset": true,
   "autosave": true,
-  "autosaveIntervalDesktop": 900000,
+  "autosaveIntervalDesktop": 60000,
   "autosaveIntervalMobile": 30000,
   "drawingFilenamePrefix": "Drawing ",
   "drawingEmbedPrefixWithFilename": true,
   "drawingFilnameEmbedPostfix": " ",
   "drawingFilenameDateTime": "YYYY-MM-DD HH.mm.ss",
   "useExcalidrawExtension": true,
+  "cropSuffix": "",
   "cropPrefix": "cropped_",
+  "annotateSuffix": "",
   "annotatePrefix": "annotated_",
   "annotatePreserveSize": false,
   "previewImageType": "SVGIMG",
@@ -89,7 +91,7 @@
   "experimentalFileTag": "✏️",
   "experimentalLivePreview": true,
   "fadeOutExcalidrawMarkup": false,
-  "loadPropertySuggestions": true,
+  "loadPropertySuggestions": false,
   "experimentalEnableFourthFont": false,
   "experimantalFourthFont": "Virgil",
   "addDummyTextElement": false,
@@ -101,7 +103,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.8.3",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.12.3",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -113,9 +115,9 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": true,
-  "previousRelease": "2.8.3",
-  "showReleaseNotes": false,
-  "showNewVersionNotification": false,
+  "previousRelease": "2.12.3",
+  "showReleaseNotes": true,
+  "showNewVersionNotification": true,
   "latexBoilerplate": "\\color{blue}",
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
@@ -195,11 +197,11 @@
       "penOptions": {
         "highlighter": false,
         "hasOutline": false,
-        "outlineWidth": 0,
+        "outlineWidth": 1,
         "constantPressure": true,
         "options": {
           "smoothing": 0.4,
-          "thinning": -0.75,
+          "thinning": -0.5,
           "streamline": 0.4,
           "easing": "linear",
           "start": {
@@ -433,7 +435,7 @@
       }
     }
   ],
-  "numberOfCustomPens": 3,
+  "numberOfCustomPens": 0,
   "pdfScale": 4,
   "pdfBorderBox": true,
   "pdfFrame": false,
@@ -447,7 +449,11 @@
   "gridSettings": {
     "DYNAMIC_COLOR": true,
     "COLOR": "#000000",
-    "OPACITY": 50
+    "OPACITY": 50,
+    "GRID_DIRECTION": {
+      "horizontal": true,
+      "vertical": true
+    }
   },
   "laserSettings": {
     "DECAY_LENGTH": 50,
