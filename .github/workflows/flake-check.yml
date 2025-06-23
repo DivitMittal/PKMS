@@ -1,5 +1,8 @@
 jobs:
   checking-flake:
+    permissions:
+      contents: read
+      id-token: write
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
@@ -23,6 +26,3 @@ jobs:
     - '**/*.md'
     - .github/**
   workflow_dispatch: {}
-permissions:
-  contents: read
-  id-token: write
