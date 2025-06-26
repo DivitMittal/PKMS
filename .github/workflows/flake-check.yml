@@ -19,10 +19,15 @@ jobs:
   pull_request:
     branches:
     - main
+    paths-ignore:
+    - '**/*.md'
+    - .github/**
+    - etc/**
   push:
     branches:
     - main
     paths-ignore:
     - '**/*.md'
     - .github/**
+    - etc/**
   workflow_dispatch: {}

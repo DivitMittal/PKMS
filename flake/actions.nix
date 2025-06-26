@@ -11,17 +11,16 @@
     };
 
     workflows = let
-      on = {
+      on = rec {
         push = {
           branches = ["main"];
           paths-ignore = [
             "**/*.md"
             ".github/**"
+            "etc/**"
           ];
         };
-        pull_request = {
-          branches = ["main"];
-        };
+        pull_request = push;
         workflow_dispatch = {};
       };
       permissions = {
