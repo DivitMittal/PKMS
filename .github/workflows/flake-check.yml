@@ -28,6 +28,8 @@ jobs:
     - '**/*.svg'
     - .github/**
     - .git*
+    - etc/**
+    - .obsidian/**
   push:
     branches:
     - main
@@ -40,4 +42,6 @@ jobs:
     - '**/*.svg'
     - .github/**
     - .git*
+    - etc/**
+    - .obsidian/**
   workflow_dispatch: {}

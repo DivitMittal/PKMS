@@ -27,6 +27,9 @@
             ".github/**"
             ## git
             ".git*"
+            ## superfluous
+            "etc/**"
+            ".obsidian/**"
           ];
         };
         pull_request = push;
