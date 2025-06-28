@@ -17,7 +17,7 @@
       alejandra.enable = true;
       deadnix.enable = true;
       statix.enable = true;
-      ## Lua
+      ## markdown
       prettier.enable = true;
     };
   };
