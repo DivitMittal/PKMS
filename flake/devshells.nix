@@ -25,7 +25,6 @@
             ### LSPs & Formatters
             nixd
             alejandra
-            markdown-oxide
             ;
         };
       };
