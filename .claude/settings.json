@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "notion"
+  ],
+  "enableAllProjectMcpServers": true
+}
