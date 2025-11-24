@@ -25,6 +25,8 @@
             ### LSPs & Formatters
             nixd
             alejandra
+            ## zk client
+            zk
             ;
         };
       };
