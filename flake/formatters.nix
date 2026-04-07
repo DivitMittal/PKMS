@@ -19,7 +19,7 @@
       deadnix.enable = true;
       statix.enable = true;
       ## markdown
-      prettier.enable = true;
+      mdformat.enable = true;
     };
   };
 }
