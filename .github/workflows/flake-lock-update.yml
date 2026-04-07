@@ -16,8 +16,9 @@ jobs:
       uses: actions/checkout@main
       with:
         fetch-depth: 1
-        persist-credentials: 'false'
-    - uses: DeterminateSystems/nix-installer-action@v21
+        persist-credentials: false
+    - name: Install Nix
+      uses: nixbuild/nix-quick-install-action@master
     - name: Magic Nix Cache(Use GitHub Actions Cache)
       uses: DeterminateSystems/magic-nix-cache-action@main
     - name: Update flake.lock
