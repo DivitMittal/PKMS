@@ -15,6 +15,17 @@ result-*
 ## Personal Vaults
 Vaults/
 
-## Tools
-.mcp*
-*local.json
+## Agent Tools
+.serena/
+.omo/
+
+## APM — generated; do not edit directly
+apm_modules/
+.codex/
+.claude/
+.opencode/
+.mcp.json
+opencode.json
+AGENTS.md
+CLAUDE.md
+GEMINI.md

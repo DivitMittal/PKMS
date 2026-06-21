@@ -1,0 +1,10 @@
+name: pkms
+version: 1.0.0
+description: Personal Knowledge Management System — Obsidian/Zettelkasten vault with Nix flake tooling
+author: DivitMittal
+license: MIT
+target:
+  - claude
+  - codex
+  - opencode
+type: instructions

@@ -1,0 +1,7 @@
+lockfile_version: '1'
+generated_at: '2026-06-21T18:01:14.243958+00:00'
+dependencies: []
+local_deployed_files:
+- .claude/rules/project-knowledge.md
+local_deployed_file_hashes:
+  .claude/rules/project-knowledge.md: sha256:d22ee32b2f4d148045e32e2ef51b9b2427558fc1ca0e6b8c5da8a2aba1c0274c
