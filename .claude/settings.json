@@ -1,7 +1,0 @@
-{
-    "enabledMcpjsonServers": ["notion"],
-    "enableAllProjectMcpServers": true,
-    "permissions": {
-        "deny": ["Read(./Vaults/)", "Read(./.mcp.json)"]
-    }
-}
