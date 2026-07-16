@@ -1,5 +1,3 @@
----
-title: {{title}}
-date: {{format-date now 'long'}}
-tags: []
----
+______________________________________________________________________
+
+## title: {{title}} date: {{format-date now 'long'}} tags: []
