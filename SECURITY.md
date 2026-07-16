@@ -12,7 +12,7 @@ This is a personal knowledge management vault — no servers, no credentials, no
 If you find a security issue (e.g. a plugin data file that accidentally contains a credential, or a Nix expression that executes untrusted input):
 
 1. Open a **GitHub issue**.
-2. Include a description and impact assessment.
+1. Include a description and impact assessment.
 
 ## Out of Scope
 
