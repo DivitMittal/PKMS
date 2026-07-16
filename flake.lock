@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "OS-nixCfg": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784122222,
+        "narHash": "sha256-9mb0EktzWzcDiWphAjbVkp7QyRDOKdleIZ2P3C3OZZo=",
+        "owner": "DivitMittal",
+        "repo": "OS-nixCfg",
+        "rev": "b6f332b3917d9ed3b26cc9dec9192222077ef8d5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DivitMittal",
+        "repo": "OS-nixCfg",
+        "type": "github"
+      }
+    },
     "actions-nix": {
       "inputs": {
         "flake-parts": [
@@ -9,7 +25,7 @@
           "git-hooks"
         ],
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-2605"
         ]
       },
       "locked": {
@@ -29,7 +45,7 @@
     "devshell": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-2605"
         ]
       },
       "locked": {
@@ -85,7 +101,7 @@
         "flake-compat": "flake-compat",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-2605"
         ]
       },
       "locked": {
@@ -123,21 +139,6 @@
         "type": "github"
       }
     },
-    "import-tree": {
-      "locked": {
-        "lastModified": 1773693634,
-        "narHash": "sha256-BtZ2dtkBdSUnFPPFc+n0kcMbgaTxzFNPv2iaO326Ffg=",
-        "owner": "vic",
-        "repo": "import-tree",
-        "rev": "c41e7d58045f9057880b0d85e1152d6a4430dbf1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "vic",
-        "repo": "import-tree",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1774855581,
@@ -150,6 +151,22 @@
       "original": {
         "owner": "nixos",
         "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-2605": {
+      "locked": {
+        "lastModified": 1784182977,
+        "narHash": "sha256-Hy8zg2HEcsk4WqowQK3UKRXz1fdQM7Z2un3nSyLbJaQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "29c22b7761070f37c4c2b0dd6a8777f0bd43e268",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-26.05-darwin",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -171,12 +188,13 @@
     },
     "root": {
       "inputs": {
+        "OS-nixCfg": "OS-nixCfg",
         "actions-nix": "actions-nix",
         "devshell": "devshell",
         "flake-parts": "flake-parts",
         "git-hooks": "git-hooks",
-        "import-tree": "import-tree",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-2605": "nixpkgs-2605",
         "systems": "systems",
         "treefmt-nix": "treefmt-nix"
       }
@@ -199,7 +217,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs"
+          "nixpkgs-2605"
         ]
       },
       "locked": {
