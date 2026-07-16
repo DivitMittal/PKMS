@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "_meta/templates",
   "templates_pairs": [
     [
       "",
@@ -12,11 +12,19 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "-/templater/scripts",
-  "enable_folder_templates": false,
+  "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
-      "template": "-/tem"
+      "folder": "journal/2026",
+      "template": "_meta/templates/daily.md"
+    },
+    {
+      "folder": "10-projects",
+      "template": "_meta/templates/project.md"
+    },
+    {
+      "folder": "00-inbox",
+      "template": "_meta/templates/capture.md"
     }
   ],
   "enable_file_templates": false,
