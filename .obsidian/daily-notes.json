@@ -1,3 +1,4 @@
 {
-  "format": "MMMM Do YYYY - ddd"
+  "format": "YYYY-MM-DD",
+  "folder": "journal/2026"
 }
