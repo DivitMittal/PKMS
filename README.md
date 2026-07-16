@@ -14,7 +14,7 @@
 
 A [PKMS](https://www.reddit.com/r/PKMS/)(Personal Knowledge Management System) in [Obsidian](https://obsidian.md/)-style markdown following the [Zettelkasten](https://www.wikiwand.com/en/articles/Zettelkasten) method.
 
----
+______________________________________________________________________
 
 <div align='center'>
     <a href="https://github.com/DivitMittal/PKMS/actions/workflows/flake-check.yml">
@@ -25,4 +25,4 @@ A [PKMS](https://www.reddit.com/r/PKMS/)(Personal Knowledge Management System) i
     </a>
 </div>
 
----
+______________________________________________________________________
