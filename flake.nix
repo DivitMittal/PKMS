@@ -8,7 +8,7 @@
   in
     mkFlake {inherit inputs specialArgs;} ({inputs, ...}: {
       systems = import inputs.systems;
-      imports = [./flake];
+      imports = [(inputs.import-tree ./flake)];
       perSystem = {system, ...}: {
         _module.args.pkgs =
           if isX86Darwin system
@@ -22,6 +22,7 @@
     "nixpkgs-2605".url = "github:NixOS/nixpkgs/nixpkgs-26.05-darwin";
     flake-parts.url = "github:hercules-ci/flake-parts";
     systems.url = "github:nix-systems/default";
+    import-tree.url = "github:vic/import-tree";
     devshell = {
       url = "github:numtide/devshell";
       inputs.nixpkgs.follows = "nixpkgs";
