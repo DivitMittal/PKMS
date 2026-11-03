@@ -83,7 +83,12 @@
         hooks = {
           ## Formatting
           treefmt.enable = false;
-          trim-trailing-whitespace.enable = true;
+          trim-trailing-whitespace = {
+            enable = true;
+            ## Vendored plugin builds are tracked verbatim for reproducibility; rewriting them
+            ## would diverge from the upstream release (and fails `nix flake check` as is)
+            excludes = ["^\\.obsidian/plugins/[^/]+/(main\\.js|styles\\.css|manifest\\.json)$"];
+          };
           mixed-line-endings.enable = false;
 
           check-added-large-files = {
